@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root{
+    --green-color:#BEF0CB;
+    --yellow-color:#F6F7C1;
+    --title-color:#b7a5ed;
+    --number-color:#75338d;
+    --tecs-color:#b8acc3;
+    --tecs-color-inactive:#d5d1d7;
+    --background-color:#d1bff6;
+}
+html,body{
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/2.png);
+    background-repeat: repeat-y;
+    background-size: contain;
+}
+.principalScreen{
+    width: 100%;
+    height: 100%;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--title-color);
+    height: 4rem;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+article.hidden{
+    display:none
+}
+#startScreen{
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image:url(../img/1.png);
+    background-color: var(--background-color);
+    width: 100%;
+    height: 100%;
+}
+.startGame,.loseScreen,.winScreen{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.loseScreen p,.winScreen p{
+    font-size: 20px;
+    margin: 0;
+}
+.winningNumber{
+    font-size: 40px;
+    margin: 0;
+}
+.winScreen{
+    background-image: url(../img/3.png);
+    background-size: contain;
+}
+.loseScreen{
+    background-image: url(../img/4.png);
+    background-size: contain;
+}
+.startGame h2, .loseScreen h2,.winScreen h2{
+    background-color: var(--title-color);
+    padding: .5rem 2rem;
+    -webkit-box-shadow: -10px 10px 0px 2px rgb(119, 52, 139);
+    -moz-box-shadow: -10px 10px 0px 2px rgb(119, 52, 139);
+    box-shadow: -10px 10px 0px 2px rgb(119, 52, 139);
+}
+.gameScreen{
+    padding-top: 2rem;
+    height: 100%;
+    
+}
+.game{
+    display: grid;
+    grid-template:repeat(10,1fr)/repeat(4,1fr);
+    width: 200px;
+    padding:1rem 2rem 0 0;
+}
+.numbGuess{
+    background-color: var(--number-color);
+    height: 40px;
+    width: 40px;
+    margin:2px;
+    margin-bottom: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.answers{
+    display: flex;
+    padding-top: 1rem;
+}
+.numberAnswers,.positionAnswers{
+    display: grid;
+    grid-template: repeat(10,1fr)/1fr;
+}
+.numbAns{
+    height: 40px;
+    width: 40px;
+    margin:2px;
+    margin-right: 8px;
+    margin-bottom: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.number{
+    background-color: var(--yellow-color);
+}
+.position{
+    background-color: var(--green-color) ;
+}
+.teclado{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.numbs-enter{
+    display: flex;
+    width: 60%;
+}
+.tec,.enterBtn,.reset{
+    cursor: pointer;
+}
+.tec:hover,.enterBtn:hover,.reset:hover{
+    background-color: var(--number-color);
+    color: white;
+}
+.num-tec{
+    display: grid;
+    grid-template: repeat(4,1fr)/repeat(3,1fr);
+    grid-template-areas: "numb numb numb"
+                        "numb numb numb"
+                        "numb numb numb"
+                        "back back back";
+    width: 100%;
+    padding: 2rem;
+    padding-right: 0;
+}
+.num-tec div{
+    height: 40px;
+    background-color: var(--tecs-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:2px;
+    border-radius: 5px;
+}
+.back{
+    grid-area: back;
+}
+.enter{
+    display: grid;
+    grid-template: repeat(4,1fr)/repeat(2,1fr);
+    grid-template-areas: "ent ent"
+                        "ent ent"
+                        "ent ent"
+                        "reset reset";
+    padding: 2rem;
+    padding-left: .1rem;
+    width: 30%;
+}
+.enterBtn{
+    grid-area: ent;
+}
+.reset{
+    grid-area: reset;
+}
+
+.info, .reset, .enterBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--tecs-color);
+    border-radius: 5px;
+    margin:2px;
+}
+.num-tec .inactive{
+    background-color: var(--tecs-color-inactive);
+    color: rgb(113, 109, 109);
+}
+.body-widget{
+    height: 100%;
+}
+@media (min-width:700px) {
+    #startScreen{
+        background-image: url(../img/1pc.png);
+        background-size: contain;
+        background-color: var(--background-color);
+        background-position: center;
+    }
+    body{
+        background-image: url(../img/2pc.png);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .gameScreen{
+        display: flex;
+        width: 800px;
+        background-image: none;
+    }
+    #winScreen{
+        background-image: url(../img/3pc.png);
+        width: 100%;
+        background-size: contain;
+    }
+    .loseScreen{
+        background-image: url(../img/4pc.png);
+        width: 100%;
+        background-size: contain;
+    }
+    .teclado-widget{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .body-widget{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

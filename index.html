@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <title>Adivina el Numero</title>
+  <link rel="stylesheet" href="css/main.css">
+  <script defer src="js/main.js"></script>
+</head>
+<body>
+  <article class="principalScreen">
+    
+    <article class="body-widget">
+      <article class="startGame " id="startScreen">
+        <h1>¿Want to Play?</h1>
+        <h2 id="startGameBTN">START</h2>
+      </article>
+
+      <article class="gameScreen hidden" id="gameScreen">
+        <main>
+          <article class="game">
+            <div class="numbGuess row1"></div>
+            <div class="numbGuess row1"></div>
+            <div class="numbGuess row1"></div>
+            <div class="numbGuess row1"></div>
+            <div class="numbGuess row2"></div>
+            <div class="numbGuess row2"></div>
+            <div class="numbGuess row2"></div>
+            <div class="numbGuess row2"></div>
+            <div class="numbGuess row3"></div>
+            <div class="numbGuess row3"></div>
+            <div class="numbGuess row3"></div>
+            <div class="numbGuess row3"></div>
+            <div class="numbGuess row4"></div>
+            <div class="numbGuess row4"></div>
+            <div class="numbGuess row4"></div>
+            <div class="numbGuess row4"></div>
+            <div class="numbGuess row5"></div>
+            <div class="numbGuess row5"></div>
+            <div class="numbGuess row5"></div>
+            <div class="numbGuess row5"></div>
+            <div class="numbGuess row6"></div>
+            <div class="numbGuess row6"></div>
+            <div class="numbGuess row6"></div>
+            <div class="numbGuess row6"></div>
+            <div class="numbGuess row7"></div>
+            <div class="numbGuess row7"></div>
+            <div class="numbGuess row7"></div>
+            <div class="numbGuess row7"></div>
+            <div class="numbGuess row8"></div>
+            <div class="numbGuess row8"></div>
+            <div class="numbGuess row8"></div>
+            <div class="numbGuess row8"></div>
+            <div class="numbGuess row9"></div>
+            <div class="numbGuess row9"></div>
+            <div class="numbGuess row9"></div>
+            <div class="numbGuess row9"></div>
+            <div class="numbGuess row10"></div>
+            <div class="numbGuess row10"></div>
+            <div class="numbGuess row10"></div>
+            <div class="numbGuess row10"></div>
+          </article>
+          <section class="answers">
+            <div class="numberAnswers">
+              <div class="numbAns number row1A"></div>
+              <div class="numbAns number row2A"></div>
+              <div class="numbAns number row3A"></div>
+              <div class="numbAns number row4A"></div>
+              <div class="numbAns number row5A"></div>
+              <div class="numbAns number row6A"></div>
+              <div class="numbAns number row7A"></div>
+              <div class="numbAns number row8A"></div>
+              <div class="numbAns number row9A"></div>
+              <div class="numbAns number row10A"></div>
+            </div>
+            <div class="positionAnswers">
+              <div class="numbAns position row1A"></div>
+              <div class="numbAns position row2A"></div>
+              <div class="numbAns position row3A"></div>
+              <div class="numbAns position row4A"></div>
+              <div class="numbAns position row5A"></div>
+              <div class="numbAns position row6A"></div>
+              <div class="numbAns position row7A"></div>
+              <div class="numbAns position row8A"></div>
+              <div class="numbAns position row9A"></div>
+              <div class="numbAns position row10A"></div>
+            </div>
+          </section>
+        </main>
+        <section class="teclado-widget">
+          <footer class="teclado">
+            <section class="numbs-enter">
+              <div class="num-tec">
+                <div class="tec">1</div>
+                <div class="tec">2</div>
+                <div class="tec">3</div>
+                <div class="tec">4</div>
+                <div class="tec">5</div>
+                <div class="tec">6</div>
+                <div class="tec">7</div>
+                <div class="tec">8</div>
+                <div class="tec">9</div>
+                <div class="back" id="back">X</div>
+              </div> 
+            </section>
+            <div class="enter">
+              <div class="enterBtn" id="enterBtn">Enter</div>
+              <div class="reset" id="reset">Reset</div>
+            </div>
+          </footer>
+        </section>
+        
+      </article>
+      <article class="loseScreen hidden" id="loseScreen">
+        <h1>¡You Lost!</h1>
+        <p>The number was</p>
+        <h3 class="winningNumber"></h3>
+        <h2 id="playAgainBTN">Play Again</h2>
+      </article>
+      <article class="winScreen hidden" id="winScreen">
+        <h1>¡You Win!</h1>
+        <p>The number was</p>
+        <h3 class="winningNumber"></h3>
+        <h2 id="playAgainBTNWin">Play Again</h2>
+      </article>
+    </article>
+  </article>
+</body>
+</html>
